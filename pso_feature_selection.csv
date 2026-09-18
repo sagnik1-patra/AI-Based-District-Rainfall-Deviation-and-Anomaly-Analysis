@@ -1,0 +1,11 @@
+Feature,Selected_By_PSO,Binary_Value
+South West Monsoon(June 14 to September 14)Actual,No,0
+North East Monsoon(October 14 to December 14)Actual,No,0
+Winter Season(January 15 and February 15) Actual,No,0
+Hot Weather Season(March 15 to May 15)Actual,No,0
+Annual Total (June 14 to May 15)Actual,Yes,1
+South West Monsoon(June 14 to September 14)Normal,No,0
+North East Monsoon(October 14 to December 14)Normal,No,0
+Winter Season(January 15 and February 15)Normal,No,0
+Hot Weather Season(March 15 to May 15)Normal,No,0
+Annual Total (June 14 to May 15)Normal,Yes,1

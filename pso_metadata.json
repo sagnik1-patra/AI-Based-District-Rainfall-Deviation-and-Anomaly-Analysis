@@ -1,0 +1,53 @@
+{
+    "project": "AI-Based District Rainfall Deviation and Anomaly Analysis",
+    "dataset": "Rainfalldistrict_2.csv",
+    "optimization_algorithm": "Binary Particle Swarm Optimization",
+    "pso_parameters": {
+        "particles": 30,
+        "iterations": 30,
+        "inertia_weight": 0.7,
+        "cognitive_coefficient": 1.5,
+        "social_coefficient": 1.5
+    },
+    "original_features": [
+        "South West Monsoon(June 14 to September 14)Actual",
+        "North East Monsoon(October 14 to December 14)Actual",
+        "Winter Season(January 15 and February 15) Actual",
+        "Hot Weather Season(March 15 to May 15)Actual",
+        "Annual Total (June 14 to May 15)Actual",
+        "South West Monsoon(June 14 to September 14)Normal",
+        "North East Monsoon(October 14 to December 14)Normal",
+        "Winter Season(January 15 and February 15)Normal",
+        "Hot Weather Season(March 15 to May 15)Normal",
+        "Annual Total (June 14 to May 15)Normal"
+    ],
+    "selected_features": [
+        "Annual Total (June 14 to May 15)Actual",
+        "Annual Total (June 14 to May 15)Normal"
+    ],
+    "best_particle": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+    ],
+    "best_fitness": 0.7876666666666666,
+    "random_forest_metrics": {
+        "accuracy": 0.5555555555555556,
+        "precision": 0.30864197530864196,
+        "recall": 0.5555555555555556,
+        "f1_score": 0.39682539682539686
+    },
+    "neural_network_metrics": {
+        "accuracy": 0.8888888888888888,
+        "precision": 0.7962962962962963,
+        "recall": 0.8888888888888888,
+        "f1_score": 0.8383838383838383
+    }
+}

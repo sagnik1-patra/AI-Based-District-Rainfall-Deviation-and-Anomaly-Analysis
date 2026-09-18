@@ -1,0 +1,52 @@
+project:
+  name: AI-Based District Rainfall Deviation and Anomaly Analysis
+  dataset: Rainfalldistrict_2.csv
+  problem_type: Multiclass Classification
+  target: Rainfall_Category
+dataset:
+  rows: 33
+  columns: 16
+  district_column: District
+features:
+  actual_columns:
+  - South West Monsoon(June 14 to September 14)Actual
+  - North East Monsoon(October 14 to December 14)Actual
+  - Winter Season(January 15 and February 15) Actual
+  - Hot Weather Season(March 15 to May 15)Actual
+  - Annual Total (June 14 to May 15)Actual
+  normal_columns:
+  - South West Monsoon(June 14 to September 14)Normal
+  - North East Monsoon(October 14 to December 14)Normal
+  - Winter Season(January 15 and February 15)Normal
+  - Hot Weather Season(March 15 to May 15)Normal
+  - Annual Total (June 14 to May 15)Normal
+  model_features:
+  - South West Monsoon(June 14 to September 14)Actual
+  - North East Monsoon(October 14 to December 14)Actual
+  - Winter Season(January 15 and February 15) Actual
+  - Hot Weather Season(March 15 to May 15)Actual
+  - Annual Total (June 14 to May 15)Actual
+  - South West Monsoon(June 14 to September 14)Normal
+  - North East Monsoon(October 14 to December 14)Normal
+  - Winter Season(January 15 and February 15)Normal
+  - Hot Weather Season(March 15 to May 15)Normal
+  - Annual Total (June 14 to May 15)Normal
+rainfall_categories:
+  Deficient: Deviation below -20%
+  Normal: Deviation from -20% to +20%
+  Excess: Deviation above +20%
+models:
+  random_forest:
+    estimators: 200
+    random_state: 42
+    accuracy: 0.6666666666666666
+  neural_network:
+    epochs: 200
+    batch_size: 8
+    optimizer: adam
+    accuracy: 0.6666666865348816
+output_files:
+  h5: rainfall_model.h5
+  pkl: rainfall_model.pkl
+  yaml: rainfall_config.yaml
+  json: rainfall_metadata.json

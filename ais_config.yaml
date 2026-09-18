@@ -1,0 +1,26 @@
+project:
+  name: AI-Based District Rainfall Deviation and Anomaly Analysis
+  optimization: Artificial Immune System
+  dataset: Rainfalldistrict_2.csv
+ais:
+  population_size: 30
+  generations: 25
+  clone_factor: 5
+  mutation_rate: 0.15
+  elite_size: 6
+  best_fitness: 0.7876666666666666
+  original_feature_count: 10
+  selected_feature_count: 2
+  selected_features:
+  - Annual Total (June 14 to May 15)Actual
+  - Annual Total (June 14 to May 15)Normal
+random_forest:
+  accuracy: 0.5555555555555556
+  precision: 0.30864197530864196
+  recall: 0.5555555555555556
+  f1: 0.39682539682539686
+neural_network:
+  accuracy: 0.8888888888888888
+  precision: 0.7962962962962963
+  recall: 0.8888888888888888
+  f1: 0.8383838383838383

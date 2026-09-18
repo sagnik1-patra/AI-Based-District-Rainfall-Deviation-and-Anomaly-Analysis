@@ -1,0 +1,86 @@
+{
+    "project_name": "AI-Based District Rainfall Deviation and Anomaly Analysis",
+    "dataset": "Rainfalldistrict_2.csv",
+    "dataset_rows": 33,
+    "dataset_columns": 16,
+    "district_column": "District",
+    "actual_rainfall_columns": [
+        "South West Monsoon(June 14 to September 14)Actual",
+        "North East Monsoon(October 14 to December 14)Actual",
+        "Winter Season(January 15 and February 15) Actual",
+        "Hot Weather Season(March 15 to May 15)Actual",
+        "Annual Total (June 14 to May 15)Actual"
+    ],
+    "normal_rainfall_columns": [
+        "South West Monsoon(June 14 to September 14)Normal",
+        "North East Monsoon(October 14 to December 14)Normal",
+        "Winter Season(January 15 and February 15)Normal",
+        "Hot Weather Season(March 15 to May 15)Normal",
+        "Annual Total (June 14 to May 15)Normal"
+    ],
+    "feature_columns": [
+        "South West Monsoon(June 14 to September 14)Actual",
+        "North East Monsoon(October 14 to December 14)Actual",
+        "Winter Season(January 15 and February 15) Actual",
+        "Hot Weather Season(March 15 to May 15)Actual",
+        "Annual Total (June 14 to May 15)Actual",
+        "South West Monsoon(June 14 to September 14)Normal",
+        "North East Monsoon(October 14 to December 14)Normal",
+        "Winter Season(January 15 and February 15)Normal",
+        "Hot Weather Season(March 15 to May 15)Normal",
+        "Annual Total (June 14 to May 15)Normal"
+    ],
+    "target": "Rainfall_Category",
+    "classes": [
+        "Deficient",
+        "Excess",
+        "Normal"
+    ],
+    "rainfall_thresholds": {
+        "deficient": "< -20%",
+        "normal": "-20% to +20%",
+        "excess": "> +20%"
+    },
+    "random_forest_accuracy": 0.6666666666666666,
+    "neural_network_accuracy": 0.6666666865348816,
+    "random_forest_confusion_matrix": [
+        [
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            1,
+            2
+        ],
+        [
+            0,
+            0,
+            5
+        ]
+    ],
+    "neural_network_confusion_matrix": [
+        [
+            1,
+            0,
+            0
+        ],
+        [
+            0,
+            1,
+            2
+        ],
+        [
+            1,
+            0,
+            4
+        ]
+    ],
+    "saved_files": {
+        "h5": "C:\\Users\\sagni\\Downloads\\AI-Based District Rainfall Deviation and Anomaly Analysis\\rainfall_model.h5",
+        "pkl": "C:\\Users\\sagni\\Downloads\\AI-Based District Rainfall Deviation and Anomaly Analysis\\rainfall_model.pkl",
+        "yaml": "C:\\Users\\sagni\\Downloads\\AI-Based District Rainfall Deviation and Anomaly Analysis\\rainfall_config.yaml",
+        "json": "C:\\Users\\sagni\\Downloads\\AI-Based District Rainfall Deviation and Anomaly Analysis\\rainfall_metadata.json"
+    }
+}
